@@ -1,0 +1,104 @@
+/*  */
+.search__box {
+  /* border: 2px solid #ff4760; */
+  padding: 5px;
+  font-size: 1.5em;
+}
+
+.search__input {
+  outline: none;
+  flex: 1;
+  padding: 5px;
+}
+.search__icon {
+  display: inline-flex;
+  align-items: center;
+  color: #ff4760;
+}
+
+/* Destination */
+
+.destination__cards {
+  overflow-x: auto;
+}
+.destination__card {
+  margin: 5px;
+  width: 150px;
+  height: 200px;
+  min-width: 150px;
+  min-height: 200px;
+}
+.card__img {
+  object-fit: cover;
+  border-radius: 8px;
+}
+.card__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 2em;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.267);
+  border-radius: 8px;
+}
+/* NEARBY */
+
+.nearby__card{
+    margin-bottom:15px;
+    height: 200px;
+    position: relative;
+    color: #fff;
+}
+
+.nearby__img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.nearby__text{
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+    padding:1em;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+.nearby__type{
+    border-radius: 5px;
+    background-color: #ff4760;
+    padding:8px;
+    line-height: 1;
+}
+.nearby__save{
+    border-radius: 50%;
+    background-color: rgba(136, 130, 130, 0.548);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+.nearby__save:hover{
+    background-color: rgba(99, 94, 94, 0.548);
+}
+.nearby__name{
+    font-size: 1.8em;
+    font-weight: bold;
+    letter-spacing:1px;
+}
+.nearby__country{
+    font-size: 1.2em;
+    letter-spacing:1px;
+}
+.bi-star-fill{
+    color:rgb(255, 255, 0);
+}
+.app{
+    padding-bottom: 10rem!important;
+}

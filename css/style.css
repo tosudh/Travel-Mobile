@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+}
+
+.app {
+  margin: 0 auto;
+  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.4);
+  padding-bottom: 50px;
+  width: 400px;
+  min-height: 100%;
+  height: 100vh;
+}
+#floating-footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 350px;
+  margin: 0 auto 10px auto;
+  border-radius: 50px;
+  box-shadow: 0 0 5px 0 #0000005e;
+}
+
+#floating-footer .footer__icon {
+  font-size: 2.5em;
+  padding: 0.2em 1em;
+  border-radius: 5em;
+  cursor: pointer;
+  color: #000;
+}
+#floating-footer .footer__icon:hover {
+  color: #aaa;
+}
+
+#floating-footer .footer__icon--active {
+  background-color: #ff4760 !important;
+  color: #fff !important;
+}
+
+.scroll--custom {
+  cursor: pointer;
+  overflow-x: auto;
+}
+
+.app{
+  overflow-y: auto;
+}
+.app::-webkit-scrollbar {
+  display: none;
+}
+.scroll--custom::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+  /* display: none; */
+}
+
+/* Track */
+.scroll--custom::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.scroll--custom::-webkit-scrollbar-thumb {
+  background: rgb(219, 214, 214);
+  width: 40px;
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+.scroll--custom::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media screen and (max-width: 500px) {
+  .app {
+    margin: 0;
+    width: 100%;
+  }
+}

@@ -1,0 +1,100 @@
+.guide__link {
+  color: #ff4760;
+  font-size: 1.2em;
+}
+.guide__link:hover {
+  color: #ff475fbd;
+}
+
+
+.need__card {
+  min-width: 140px;
+  height: 180px;
+  position: relative;
+}
+.need__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.need__text {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  color: #fff;
+  font-size: 2em;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+
+/* Article */
+.article__search {
+  /* border: 2px solid #ff4760; */
+  padding: 5px 10px;
+  font-size: 1.5em;
+
+}
+.search__input {
+  outline: none;
+  flex: 1;
+  padding: 5px;
+}
+.search__icon {
+  display: inline-flex;
+  align-items: center;
+  color: #ff4760;
+}
+
+.article__category::-webkit-scrollbar{
+  display: none;
+}
+.article__category{
+  display: flex;
+  gap: 5px;
+}
+.article__category .category{
+  border: 1px solid #aaa;
+  padding: 5px 10px;
+  border-radius: 5em;
+  color: #0048f0;
+  font-size: 1.5em;
+  font-weight: bold;
+  min-width: fit-content;
+  display:inline-flex;
+  justify-content:space-between;
+  align-items:center;
+  gap: 5px;
+}
+
+
+/* Pick Up */
+.pick__cards{
+  margin-bottom: 10rem;
+  font-size: 1.5em;
+}
+.pick__card{
+  border-radius:8px;
+  overflow: hidden;
+  min-width: 250px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+.pick__img img{
+  min-width: 100%;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+}
+.pick__text{
+  padding: 0.5em;
+}
+.pick__category{
+  color: #0048f0;
+}
+.pick__title{
+  font-size: 1.2em;
+  font-weight: bold;
+}

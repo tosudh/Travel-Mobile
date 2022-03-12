@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Travel App</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/search.css" />
+  </head>
+
+  <body>
+    <div class="app p-4">
+      <div class="search">
+        <h3 class="search__title text-dark mt-2 fw-bold">Search</h3>
+        <div
+          class="search__box d-flex gap-2 rounded align-items mt-4 border-2 border"
+        >
+          <input
+            type="text"
+            class="search__input border-0"
+            placeholder="Where next?"
+          />
+          <i class="bi bi-search search__icon"></i>
+        </div>
+      </div>
+
+      <div class="destination">
+        <h6 class="destination__title text-dark mt-3 text-uppercase fw-bold">
+          top destinations
+        </h6>
+        <div class="destination__cards scroll--custom pt-2 d-flex gap-2">
+          <div class="destination__card position-relative">
+            <img
+              class="card__img w-100 h-100"
+              src="./assets/search/tokyo.jpg"
+              alt=""
+            />
+            <div
+              class="card__text w-100 h-100 text-light d-flex flex-column align-items-center justify-content-center"
+            >
+              <span class="card__text--city">Tokyo</span>
+              <span class="card__text--country">Japan</span>
+            </div>
+          </div>
+          <div class="destination__card position-relative">
+            <img
+              class="card__img w-100 h-100"
+              src="./assets/search/sydney.jpg"
+              alt=""
+            />
+            <div
+              class="card__text w-100 h-100 text-light d-flex flex-column align-items-center justify-content-center"
+            >
+              <span class="card__text--city">Sydney</span>
+              <span class="card__text--country">Australia</span>
+            </div>
+          </div>
+          <div class="destination__card position-relative">
+            <img
+              class="card__img w-100 h-100"
+              src="./assets/search/mumbai.jpg"
+              alt=""
+            />
+            <div
+              class="card__text w-100 h-100 text-light d-flex flex-column align-items-center justify-content-center"
+            >
+              <span class="card__text--city">Mumbai</span>
+              <span class="card__text--country">India</span>
+            </div>
+          </div>
+          <div class="destination__card position-relative">
+            <img
+              class="card__img w-100 h-100"
+              src="./assets/search/Malaysia.jpg"
+              alt=""
+            />
+            <div
+              class="card__text w-100 h-100 text-light d-flex flex-column align-items-center justify-content-center"
+            >
+              <span class="card__text--city">Kuala Lumpur</span>
+              <span class="card__text--country">Malaysia</span>
+            </div>
+          </div>
+          <div class="destination__card position-relative">
+            <img
+              class="card__img w-100 h-100"
+              src="./assets/search/chicago.jpg"
+              alt=""
+            />
+            <div
+              class="card__text w-100 h-100 text-light d-flex flex-column align-items-center justify-content-center"
+            >
+              <span class="card__text--city">Chicago</span>
+              <span class="card__text--country">United States</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nearby">
+        <h6 class="nearby__title text-dark mt-3 text-uppercase fw-bold">
+          Nearby Attractions
+        </h6>
+
+        <div class="nearby__cards">
+          <div class="nearby__card">
+            <img
+              src="./assets/search/marina.jpg"
+              alt=""
+              class="nearby__img rounded"
+            />
+            <div
+              class="nearby__text fs-6 d-flex flex-column justify-content-between"
+            >
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="nearby__type">HOTEL</span>
+                <i class="nearby__save bi bi-bookmark"></i>
+              </div>
+              <div class="nearby__details text-center">
+                <p class="nearby__name mb-0">Marina Bay</p>
+                <p class="nearby__country">Singapore</p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="nearby__rating">
+                  <span>4.8</span>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </span>
+                <span class="nearby__price">$337 per night</span>
+              </div>
+            </div>
+          </div>
+          <div class="nearby__card">
+            <img
+              src="./assets/search/twin.jpg"
+              alt=""
+              class="nearby__img rounded"
+            />
+            <div
+              class="nearby__text fs-6 d-flex flex-column justify-content-between"
+            >
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="nearby__type">SIGHT</span>
+                <i class="nearby__save bi bi-bookmark"></i>
+              </div>
+              <div class="nearby__details text-center">
+                <p class="nearby__name mb-0">Petronas Towers</p>
+                <p class="nearby__country">Malaysia</p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="nearby__rating">
+                  <span>4.8</span>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </span>
+                <span class="nearby__price">$337 per night</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="nearby__card">
+            <img
+              src="./assets/search/burj.jpg"
+              alt=""
+              class="nearby__img rounded"
+            />
+            <div
+              class="nearby__text fs-6 d-flex flex-column justify-content-between"
+            >
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="nearby__type">SIGHT</span>
+                <i class="nearby__save bi bi-bookmark"></i>
+              </div>
+              <div class="nearby__details text-center">
+                <p class="nearby__name mb-0">Burj Khalifa</p>
+                <p class="nearby__country">Dubai</p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="nearby__rating">
+                  <span>4.8</span>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </span>
+                <span class="nearby__price">$337 per night</span>
+              </div>
+            </div>
+          </div>
+          <div class="nearby__card">
+            <img
+              src="./assets/search/colosseum.jpg"
+              alt=""
+              class="nearby__img rounded"
+            />
+            <div
+              class="nearby__text fs-6 d-flex flex-column justify-content-between"
+            >
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="nearby__type">SIGHT</span>
+                <i class="nearby__save bi bi-bookmark"></i>
+              </div>
+              <div class="nearby__details text-center">
+                <p class="nearby__name mb-0">Colosseum</p>
+                <p class="nearby__country">Italy</p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="nearby__rating">
+                  <span>4.8</span>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </span>
+                <span class="nearby__price">$337 per night</span>
+              </div>
+            </div>
+          </div>
+          <div class="nearby__card">
+            <img
+              src="./assets/search/ben.jpg"
+              alt=""
+              class="nearby__img rounded"
+            />
+            <div
+              class="nearby__text fs-6 d-flex flex-column justify-content-between"
+            >
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="nearby__type">SIGHT</span>
+                <i class="nearby__save bi bi-bookmark"></i>
+              </div>
+              <div class="nearby__details text-center">
+                <p class="nearby__name mb-0">Big Ben Tower</p>
+                <p class="nearby__country">London</p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="nearby__rating">
+                  <span>4.8</span>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </span>
+                <span class="nearby__price">$337 per night</span>
+              </div>
+            </div>
+          </div>
+          <div class="nearby__card">
+            <img
+              src="./assets/search/tajmahal.jpg"
+              alt=""
+              class="nearby__img rounded"
+            />
+            <div
+              class="nearby__text fs-6 d-flex flex-column justify-content-between"
+            >
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="nearby__type">SIGHT</span>
+                <i class="nearby__save bi bi-bookmark"></i>
+              </div>
+              <div class="nearby__details text-center">
+                <p class="nearby__name mb-0">Taj Mahal</p>
+                <p class="nearby__country">Agra</p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="nearby__rating">
+                  <span>4.8</span>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </span>
+                <span class="nearby__price">$337 per night</span>
+              </div>
+            </div>
+          </div>
+          <div class="nearby__card">
+            <img
+              src="./assets/search/eiffel.jpg"
+              alt=""
+              class="nearby__img rounded"
+            />
+            <div
+              class="nearby__text fs-6 d-flex flex-column justify-content-between"
+            >
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="nearby__type">SIGHT</span>
+                <i class="nearby__save bi bi-bookmark"></i>
+              </div>
+              <div class="nearby__details text-center">
+                <p class="nearby__name mb-0">Eiffel Tower</p>
+                <p class="nearby__country">Paris</p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="nearby__rating">
+                  <span>4.8</span>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </span>
+                <span class="nearby__price">$337 per night</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer
+        id="floating-footer"
+        class="p-1 d-flex justify-content-around bg-white position-fixed"
+      >
+        <a href="./index.html" class="footer__icon">
+          <i class="bi bi-house-fill"></i>
+        </a>
+        <a href="./search.html" class="footer__icon footer__icon--active">
+          <i class="bi bi-search"></i>
+        </a>
+        <a href="./trip.html" class="footer__icon">
+          <i class="bi bi-calendar"></i>
+        </a>
+        <a href="./guide.html" class="footer__icon">
+          <i class="bi bi-map"></i>
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>
